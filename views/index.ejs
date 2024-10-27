@@ -1,0 +1,11 @@
+<head>
+    <title><%=title%></title>
+</head>
+<body> 
+    <a href="/new">add a message</a>
+    <ul>
+    <% messages.forEach((x)=>{%>
+        <%- include("message/message",{messages:x})%>
+    <%})%>
+    </ul>
+</body>
